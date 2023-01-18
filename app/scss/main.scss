@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+$grey: #444;
+
+html {
+    margin: 0;
+    padding: 0;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+    .first {
+        max-width: 1175px;
+        margin: 0 auto;
+        position: relative;
+        height: 100vh;
+
+        &__decorator {
+            position: absolute;
+            width: 830px;
+            height: 830px;
+            left: 50%;
+
+            transform: translate(-50%, -55%) rotate(-45deg);
+            background: rgb(255, 255, 255);
+            background: linear-gradient(222.11deg, #2B2A38 48.83%, #FFFFFF 74.19%);
+        }
+
+        &__content {
+            position: relative;
+
+            header {
+                position: relative;
+                padding: 1rem;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style-type: none;
+                    max-width: 822px;
+                    margin: 0 auto;
+                    color: white;
+
+                    img {
+                        width: 125px;
+                    }
+                }
+            }
+
+            h1 {
+                display: block;
+                margin-top: 5rem;
+                text-align: center;
+                color: $grey;
+
+                font-style: normal;
+                font-weight: 300;
+                font-size: 30px;
+                letter-spacing: 0.24em;
+            }
+
+            .main-image {
+                display: block;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 1091px;
+                margin-top: -4rem;
+            }
+
+            .more-details {
+                position: relative;
+                bottom: 1rem;
+                color: $grey;
+                width: 150px;
+                text-align: center;
+                margin: 0 auto;
+                cursor: pointer;
+
+                &__arrow {
+                    position: relative;
+                    animation: pulse 2s infinite ease-in-out; 
+                }
+            }
+
+            @keyframes pulse {
+                0% {
+                    top: -.3rem;
+                }
+
+                50% {
+                    top: 0;
+                }
+
+                100% {
+                    top: -.3rem;
+                }
+            }
+        }
+
+
+
+
+    }
+}
