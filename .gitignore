@@ -2,7 +2,6 @@
 /dist
 /.idea
 /.vscode
-/gulp
 .DS_Store
 **/.DS_Store
 .DS_Store?
