@@ -160,4 +160,55 @@ body {
             }
         }
     }
+
+    .third {
+        h2 {
+            color: #000;
+            font-size: 2rem;
+            letter-spacing: .5rem;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .features {
+            display: flex;
+            gap: 1rem;
+            max-width: 1000px;
+
+            margin: 3rem auto;
+
+            
+            
+            &__right,
+            &__left {
+                flex: 3;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                > p {
+                    width: 150px;
+                    cursor: pointer;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    color: $grey;
+                }
+            }
+
+            &__right {
+                text-align: right;
+                align-items: flex-end;
+            }
+
+            &__center {
+                flex: 4;
+                height: 700px;
+                background-image: url('../images/img/back.webp');
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: background 0.5s ease;
+            }
+        }
+    }
 }

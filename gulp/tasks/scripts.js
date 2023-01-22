@@ -9,7 +9,7 @@ export const scripts = () => {
     return gulp.src(['app/scripts/*', '!app/scripts/modules/'])
     .pipe(ts({
         noImplicitAny: true,
-        target: "es5"
+        target: "es6"
     }))
     .pipe(uglify()) // Сжимаем JavaScript
     .pipe(gulp.dest('dist/scripts/'))
