@@ -257,6 +257,7 @@ body {
                         outline: none;
                         padding: 5px;
                         font-size: 1.2rem;
+                        color: #fff;
                     }
 
                     label {
@@ -279,11 +280,28 @@ body {
                         border: 1px solid $grey;
                         border-radius: 0;
                         padding: 8px;
+                        color: #fff;
                     }
                 }
 
 
             }
+        }
+    }
+
+    .fifth {
+        text-align: center;
+        margin: 10rem 0;
+
+        img {
+            max-width: 300px;
+            width: 80%;
+        }
+
+        p {
+            color: $grey;
+            font-size: 1.5rem;
+            letter-spacing: .2rem;
         }
     }
 }

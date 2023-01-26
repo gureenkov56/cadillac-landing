@@ -48,7 +48,11 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     function addActiveClassToLabel(input: HTMLInputElement): void {
-        if (input.value.length) input.parentElement?.querySelector('label')?.classList.add('active');
+        if (input.value.length) {
+            input.parentElement?.querySelector('label')?.classList.add('active');
+        } else {
+            input.parentElement?.querySelector('label')?.classList.remove('active');
+        }
     }
 
     /**********
